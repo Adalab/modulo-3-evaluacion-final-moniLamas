@@ -1,7 +1,11 @@
 import "../styles/App.scss";
 import { useState, useEffect } from "react";
+import api from "../services/charactersApi";
 
 function App() {
+  api().then((data) => {
+    console.log(data);
+  });
   return (
     <>
       <header className="header">
