@@ -5,8 +5,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1 className="">Rick and Morty</h1>
-        <h2 className="">Characters</h2>
+        <h1 className="">Characters</h1>
         <img
           className="header__img"
           src="https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png"
@@ -34,6 +33,11 @@ function App() {
                 <img className="card__img" src="" alt="" title="" />
                 <h4 className="card__title">Nombre:</h4>
                 <p className="card__text">Especie:</p>
+                <img
+                  className="card__calaver"
+                  src="../images/calaverRick.jpg"
+                  alt=""
+                />
               </a>
             </li>
           </ul>
