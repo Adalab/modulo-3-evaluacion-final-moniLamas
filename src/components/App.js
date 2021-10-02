@@ -3,6 +3,7 @@ import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
 import api from "../services/callToApi";
 import CharacterList from "./CharacterList";
+import Filters from "./Filters";
 
 function App() {
   const [data, setData] = useState([]);
@@ -34,20 +35,7 @@ function App() {
         />
       </header>
       <main className="container">
-        <form className="form" action="">
-          <label htmlFor="search" className="form__label">
-            Buscador
-          </label>
-          <input
-            type="text"
-            id="search"
-            name="search"
-            className="form__input"
-            placeholder="Nombre del personaje"
-            value={searchName}
-            onChange={handleSearchName}
-          />
-        </form>
+        <Filters searchName={searchName} handleSearchName={handleSearchName} />
         <section className="list">
           <CharacterList data={filteredData} />
         </section>
