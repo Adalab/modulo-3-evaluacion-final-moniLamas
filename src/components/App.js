@@ -36,13 +36,14 @@ function App() {
       <main className="container">
         <form className="form" action="">
           <label htmlFor="search" className="form__label">
-            Buscador de personajes
+            Buscador
           </label>
           <input
             type="text"
             id="search"
             name="search"
             className="form__input"
+            placeholder="Nombre del personaje"
             value={searchName}
             onChange={handleSearchName}
           />
