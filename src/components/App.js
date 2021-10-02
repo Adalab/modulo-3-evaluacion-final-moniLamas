@@ -23,20 +23,18 @@ function App() {
         />
       </header>
       <main className="container">
-        <section className="form">
-          <form action="">
-            <label htmlFor="search" className="form__label">
-              Buscador de personajes
-            </label>
-            <input
-              type="text"
-              id="search"
-              name="search"
-              className="form__input"
-            />
-          </form>
-        </section>
-        <section>
+        <form className="form" action="">
+          <label htmlFor="search" className="form__label">
+            Buscador de personajes
+          </label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            className="form__input"
+          />
+        </form>
+        <section className="list">
           <CharacterList data={data} />
         </section>
       </main>

@@ -1,13 +1,14 @@
 function CharacterItem(props) {
-  if (props.characterData.status === "Dead") {
-    return (
-      <img
-        className="card__calaver"
-        src="../images/calaverRick.jpg"
-        alt="Calaver Rick"
-      />
-    );
-  }
+  const isAlive = props.characterData.status;
+  //   if (props.characterData.status === "Dead") {
+  //     return (
+  //       <img
+  //         className="card__calaver"
+  //         src="../images/calaverRick.jpg"
+  //         alt="Calaver Rick"
+  //       />
+  //     );
+  //   }
 
   return (
     <>
@@ -19,7 +20,17 @@ function CharacterItem(props) {
       />
       <h4 className="card__title">Nombre: {props.characterData.name}</h4>
       <p className="card__text">Especie: {props.characterData.species}</p>
-      <p>Estado: {props.characterData.status}</p>
+      <p>
+        {isAlive === "Dead" ? (
+          <img
+            className="card__calaver"
+            src="../images/calaverRick.jpg"
+            alt="Calaver Rick"
+          />
+        ) : (
+          ""
+        )}
+      </p>
     </>
   );
 }
