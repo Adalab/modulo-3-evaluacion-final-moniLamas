@@ -15,9 +15,13 @@ function App() {
   }, []);
 
   const handleSearchName = (ev) => {
-    // ev.preventdefault();
+    ev.preventDefault();
     setSearchName(ev.currentTarget.value);
   };
+
+  const filteredData = data.filter((character) =>
+    character.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
+  );
 
   return (
     <>
@@ -44,7 +48,7 @@ function App() {
           />
         </form>
         <section className="list">
-          <CharacterList data={data} />
+          <CharacterList data={filteredData} />
         </section>
       </main>
       <footer className="footer">
