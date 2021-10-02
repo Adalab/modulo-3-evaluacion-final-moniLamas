@@ -1,3 +1,5 @@
+import skull from "../images/skull.png";
+
 function CharacterDetail(props) {
   const isAlive = props.characterData.status;
   return (
@@ -21,8 +23,9 @@ function CharacterDetail(props) {
         {isAlive === "Dead" ? (
           <img
             className="card__calaver"
-            src="../images/calaverRick.jpg"
+            src={skull}
             alt="Calaver Rick"
+            width="20px"
           />
         ) : (
           ""
