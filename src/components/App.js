@@ -2,11 +2,16 @@ import "../styles/App.scss";
 import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
 import api from "../services/callToApi";
+import CharacterList from "./CharacterList";
 
 function App() {
-  api().then((data) => {
-    console.log(data);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    api().then((initialData) => {
+      setData(initialData);
+    });
   });
+
   return (
     <>
       <header className="header">
@@ -32,20 +37,7 @@ function App() {
           </form>
         </section>
         <section>
-          <ul className="cards">
-            <li className="card">
-              <a href="">
-                <img className="card__img" src="" alt="" title="" />
-                <h4 className="card__title">Nombre:</h4>
-                <p className="card__text">Especie:</p>
-                <img
-                  className="card__calaver"
-                  src="../images/calaverRick.jpg"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
+          <CharacterList />
         </section>
       </main>
       <footer className="footer">
