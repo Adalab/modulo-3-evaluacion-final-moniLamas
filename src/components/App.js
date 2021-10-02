@@ -1,6 +1,7 @@
 import "../styles/App.scss";
+import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
-import api from "../services/charactersApi";
+import api from "../services/callToApi";
 
 function App() {
   api().then((data) => {
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1 className="">Characters</h1>
+        <h1 className="header__title">Characters</h1>
         <img
           className="header__img"
           src="https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png"

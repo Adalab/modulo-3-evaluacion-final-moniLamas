@@ -1,4 +1,4 @@
-function getCharactersApi() {
+function callToApi() {
   return fetch(
     `https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-y-morty.json`
   ).then((response) =>
@@ -16,4 +16,4 @@ function getCharactersApi() {
   );
 }
 
-export default getCharactersApi;
+export default callToApi;
