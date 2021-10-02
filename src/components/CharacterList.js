@@ -1,21 +1,12 @@
-function CharacterList() {
-  const html = data.map();
-  return (
-    <ul className="cards">
-      <li className="card">
-        <a href="">
-          <img className="card__img" src="" alt="" title="" />
-          <h4 className="card__title">Nombre:</h4>
-          <p className="card__text">Especie:</p>
-          <img
-            className="card__calaver"
-            src="../images/calaverRick.jpg"
-            alt=""
-          />
-        </a>
-      </li>
-    </ul>
-  );
+import CharacterItem from "./CharacterItem";
+
+function CharacterList(props) {
+  const html = props.data.map((characterData) => (
+    <li className="card" key={props.id}>
+      <CharacterItem characterData={characterData} />
+    </li>
+  ));
+  return <ul className="cards">{html}</ul>;
 }
 
 export default CharacterList;

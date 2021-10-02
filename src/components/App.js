@@ -37,7 +37,7 @@ function App() {
           </form>
         </section>
         <section>
-          <CharacterList />
+          <CharacterList data={data} />
         </section>
       </main>
       <footer className="footer">
