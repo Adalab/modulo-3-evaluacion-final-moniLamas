@@ -1,3 +1,5 @@
+import skull from "../images/skull.png";
+
 function CharacterCard(props) {
   const isAlive = props.characterData.status;
   return (
@@ -12,11 +14,7 @@ function CharacterCard(props) {
       <p className="card__text">Especie: {props.characterData.species}</p>
       <div>
         {isAlive === "Dead" ? (
-          <img
-            className="card__calaver"
-            src="../images/calaverRick.jpg"
-            alt="Calaver Rick"
-          />
+          <img className="card__calaver" src={skull} alt="Calaver Rick" />
         ) : (
           ""
         )}
