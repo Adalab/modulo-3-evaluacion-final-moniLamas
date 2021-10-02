@@ -2,7 +2,7 @@ import CharacterCard from "./CharacterCard";
 
 function CharacterList(props) {
   const html = props.data.map((characterData) => (
-    <li className="card" key={props.id}>
+    <li className="card" key={characterData.id}>
       <CharacterCard characterData={characterData} />
     </li>
   ));

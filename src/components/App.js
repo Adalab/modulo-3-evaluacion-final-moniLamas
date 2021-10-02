@@ -6,11 +6,18 @@ import CharacterList from "./CharacterList";
 
 function App() {
   const [data, setData] = useState([]);
+  const [searchName, setSearchName] = useState("");
+
   useEffect(() => {
     api().then((initialData) => {
       setData(initialData);
     });
-  });
+  }, []);
+
+  const handleSearchName = (ev) => {
+    // ev.preventdefault();
+    setSearchName(ev.currentTarget.value);
+  };
 
   return (
     <>
@@ -32,6 +39,8 @@ function App() {
             id="search"
             name="search"
             className="form__input"
+            value={searchName}
+            onChange={handleSearchName}
           />
         </form>
         <section className="list">
