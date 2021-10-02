@@ -18,7 +18,9 @@ function CharacterDetail(props) {
       <p className="card__text">
         Aparece en {props.characterData.episodes} episodios
       </p>
-      <p className="card__text">Está {isAlive}</p>
+      <p className="card__text">
+        Está {isAlive === "Alive" ? "Vivo" : "Desconocido"}
+      </p>
       <div>
         {isAlive === "Dead" ? (
           <img

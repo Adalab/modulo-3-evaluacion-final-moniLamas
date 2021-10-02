@@ -3,7 +3,9 @@ import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
 import { Switch, Route } from "react-router";
 import api from "../services/callToApi";
+import ls from "../services/ls";
 import CharacterList from "./CharacterList";
+import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
 
 function App() {
@@ -11,9 +13,14 @@ function App() {
   const [searchName, setSearchName] = useState("");
 
   useEffect(() => {
-    api().then((initialData) => {
-      setData(initialData);
-    });
+    if (ls.get("characters", []).length > 0) {
+      setData(ls.get("characters", []));
+    } else {
+      api().then((initialData) => {
+        setData(initialData);
+        ls.set("characters", initialData);
+      });
+    }
   }, []);
 
   const handleSearchName = (ev) => {
@@ -46,8 +53,8 @@ function App() {
             </section>
           </main>
         </Route>
-        <Route path="/user/:id">
-          <section>Aquí va lo que todavía no he creado</section>
+        <Route path="/character/:id">
+          <section>{/* <CharacterDetail character={}/> */}</section>
         </Route>
         <Route>
           <section>Oh! Página equivocada</section>
