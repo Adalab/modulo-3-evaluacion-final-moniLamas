@@ -10,6 +10,8 @@ function callToApi() {
           image: character.image,
           status: character.status,
           species: character.species,
+          episode: character.episode.length,
+          homePlanet: character.origin,
         };
       });
     })
