@@ -23,7 +23,7 @@ function App() {
     }
   }, []);
 
-  const routeData = useRouteMatch("/characterData/1");
+  const routeData = useRouteMatch("/character/:id");
   console.log(routeData);
   const characterId = routeData !== null ? routeData.params.id : "";
   const foundCard = data.find((character) => character.id === characterId);
