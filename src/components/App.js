@@ -1,7 +1,7 @@
 import "../styles/App.scss";
 import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
-import { Switch, Route } from "react-router";
+import { Switch, Route, useRouteMatch } from "react-router";
 import api from "../services/callToApi";
 import ls from "../services/ls";
 import CharacterList from "./CharacterList";
@@ -23,6 +23,10 @@ function App() {
     }
   }, []);
 
+  const routeData = useRouteMatch("/characterData/1");
+  console.log(routeData);
+  const characterId = routeData !== null ? routeData.params.id : "";
+  const foundCard = data.find((character) => character.id === characterId);
   const handleSearchName = (ev) => {
     ev.preventDefault();
     setSearchName(ev.currentTarget.value);
@@ -54,7 +58,9 @@ function App() {
           </main>
         </Route>
         <Route path="/character/:id">
-          <section>{/* <CharacterDetail character={}/> */}</section>
+          <section>
+            <CharacterDetail character={foundCard} />
+          </section>
         </Route>
         <Route>
           <section>Oh! Página equivocada</section>
