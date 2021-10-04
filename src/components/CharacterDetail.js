@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
 import skull from "../images/skull.png";
 
 function CharacterDetail(props) {
   const isAlive = props.character.status;
   return (
     <>
+      <Link>
+        <span className="card__exit">&#10006;</span>
+      </Link>
       <img
         className="card__img"
         src={props.character.image}
