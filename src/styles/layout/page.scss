@@ -11,22 +11,6 @@
   );
 }
 
-.cards {
-  display: grid;
-
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 1260px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 50px 10px;
-    justify-content: stretch;
-    justify-items: center;
-    align-items: end;
-  }
-}
-
 .card {
   color: $bg-header;
   text-align: center;
