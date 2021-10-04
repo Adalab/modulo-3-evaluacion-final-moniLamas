@@ -2,14 +2,14 @@ function FilterByName(props) {
   return (
     <>
       <label htmlFor="search" className="form__label">
-        Buscador
+        Buscador por Nombre del personaje
       </label>
       <input
         type="text"
         id="search"
         name="search"
         className="form__input"
-        placeholder="Nombre del personaje"
+        placeholder="Personaje"
         value={props.searchName}
         onChange={props.handleSearchName}
       />

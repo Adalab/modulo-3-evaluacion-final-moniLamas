@@ -12,6 +12,7 @@ import Footer from "./Footer";
 function App() {
   const [data, setData] = useState([]);
   const [searchName, setSearchName] = useState("");
+  const [searchStatus, setSearchStatus] = useState("");
 
   useEffect(() => {
     if (ls.get("characters", []).length > 0) {
@@ -33,10 +34,20 @@ function App() {
     ev.preventDefault();
     setSearchName(ev.currentTarget.value);
   };
+  const handleSearchStatus = (ev) => {
+    ev.preventDefault();
+    setSearchStatus(ev.currentTarget.value);
+  };
 
-  const filteredData = data.filter((character) =>
-    character.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
-  );
+  const filteredData = data
+    .filter((character) =>
+      character.name
+        .toLocaleLowerCase()
+        .includes(searchName.toLocaleLowerCase())
+    )
+    .filter(
+      (character) => searchStatus === "all" || searchStatus === character.status
+    );
 
   return (
     <>
@@ -47,6 +58,8 @@ function App() {
             <Filters
               searchName={searchName}
               handleSearchName={handleSearchName}
+              searchStatus={searchStatus}
+              handleSearchStatus={handleSearchStatus}
             />
             <section className="list">
               <CharacterList data={filteredData} />

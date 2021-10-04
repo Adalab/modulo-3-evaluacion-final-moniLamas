@@ -1,4 +1,5 @@
 import FilterByName from "./FilterByName";
+import FilterByStatus from "./FilterByStatus";
 
 function Filters(props) {
   return (
@@ -6,6 +7,10 @@ function Filters(props) {
       <FilterByName
         searchName={props.searchName}
         handleSearchName={props.handleSearchName}
+      />
+      <FilterByStatus
+        searchName={props.searchStatus}
+        handleSearchName={props.handleStatus}
       />
     </form>
   );
