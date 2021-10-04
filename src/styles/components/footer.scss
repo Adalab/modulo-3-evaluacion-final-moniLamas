@@ -1,5 +1,17 @@
+@import "../core/variables.scss";
 .footer {
+  background-color: $bg-footer;
+  height: 60px;
+  color: $white;
+  text-align: center;
   padding: 10px 0;
-  display: flex;
-  justify-content: space-around;
+  font: {
+    family: $font-main;
+    size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
