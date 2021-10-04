@@ -9,8 +9,8 @@ function Filters(props) {
         handleSearchName={props.handleSearchName}
       />
       <FilterByStatus
-        searchName={props.searchStatus}
-        handleSearchName={props.handleStatus}
+        searchStatus={props.searchStatus}
+        handleChangeStatus={props.handleChangeStatus}
       />
     </form>
   );

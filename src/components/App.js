@@ -34,21 +34,20 @@ function App() {
     ev.preventDefault();
     setSearchName(ev.currentTarget.value);
   };
-  const handleSearchStatus = (ev) => {
+  const handleChangeSearchStatus = (ev) => {
     ev.preventDefault();
     setSearchStatus(ev.currentTarget.value);
   };
 
   const filteredData = data
+    .filter(
+      (character) => searchStatus === "" || searchStatus === character.status
+    )
     .filter((character) =>
       character.name
         .toLocaleLowerCase()
         .includes(searchName.toLocaleLowerCase())
-    )
-    .filter(
-      (character) => searchStatus === "all" || searchStatus === character.status
     );
-
   return (
     <>
       <Header />
@@ -59,7 +58,7 @@ function App() {
               searchName={searchName}
               handleSearchName={handleSearchName}
               searchStatus={searchStatus}
-              handleSearchStatus={handleSearchStatus}
+              handleSearchStatus={handleChangeSearchStatus}
             />
             <section className="list">
               <CharacterList data={filteredData} />

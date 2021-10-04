@@ -11,9 +11,9 @@ function FilterByStatus(props) {
         value={props.searchStatus}
         onChange={props.handleChangeSearchStatus}
       >
-        <option value="all">Todos</option>
-        <option value="alive">Vivo</option>
-        <option value="dead">Muerto</option>
+        <option value="">Todos</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Muerto</option>
         <option value="unknow">Se desconoce</option>
       </select>
     </>
