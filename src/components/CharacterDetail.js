@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import skull from "../images/skull.png";
-import "../styles/components/cardDetail.scss";
+import "../styles/components/characterDetail.scss";
 
 function CharacterDetail(props) {
   const isAlive = props.character.status;
