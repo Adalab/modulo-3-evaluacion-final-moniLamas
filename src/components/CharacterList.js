@@ -3,8 +3,8 @@ import CharacterCard from "./CharacterCard";
 
 function CharacterList(props) {
   const html = props.data.map((characterData) => (
-    <Link to={`/characterData/${characterData.id}`}>
-      <li className="card" key={characterData.id}>
+    <Link to={`/characterData/${characterData.id}`} key={characterData.id}>
+      <li className="card">
         <CharacterCard characterData={characterData} />
       </li>
     </Link>

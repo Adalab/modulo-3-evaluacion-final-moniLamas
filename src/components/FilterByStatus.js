@@ -9,9 +9,9 @@ function FilterByStatus(props) {
         name="gender"
         id="gender"
         value={props.searchStatus}
-        onChange={props.handleChangeSearchStatus}
+        onChange={props.handleChangeStatus}
       >
-        <option value="">Todos</option>
+        <option value="all">Todos</option>
         <option value="Alive">Vivo</option>
         <option value="Dead">Muerto</option>
         <option value="unknow">Se desconoce</option>
