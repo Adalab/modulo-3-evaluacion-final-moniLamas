@@ -18,19 +18,16 @@ function App() {
     } else {
       api().then((initialData) => {
         setData(initialData);
-        console.log(initialData);
         ls.set("characters", initialData);
       });
     }
   }, []);
 
   const routeData = useRouteMatch("/characterData/:id");
-  console.log(routeData);
   const characterId = routeData !== null ? routeData.params.id : "";
   const foundCard = data.find(
     (character) => character.id === parseInt(characterId)
   );
-  console.log(foundCard);
   const handleSearchName = (ev) => {
     ev.preventDefault();
     setSearchName(ev.currentTarget.value);
