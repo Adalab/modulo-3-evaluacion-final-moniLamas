@@ -14,7 +14,7 @@ function CharacterDetail(props) {
         alt={props.character.name}
         title={props.character.name}
       />
-      <h4 className="card__title">Nombre: {props.character.name}</h4>
+      <h4 className="card__title">{props.character.name}</h4>
       <p className="card__text">Especie: {props.character.species}</p>
       <p className="card__text">
         Planeta de origen: {props.character.homePlanet}
