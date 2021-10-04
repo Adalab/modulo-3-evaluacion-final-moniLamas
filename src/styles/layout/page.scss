@@ -12,8 +12,12 @@
 }
 
 .cards {
-  @media (min-width: 768px) {
-    display: grid;
+  display: grid;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1260px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 50px 10px;
@@ -24,8 +28,12 @@
 }
 
 .card {
+  color: $bg-header;
+  text-align: center;
+  padding: 30px 0;
+  text-decoration: none;
   &__title {
-    text-decoration: none;
+    font-size: 20px;
   }
   &__img {
     border-radius: 150px;

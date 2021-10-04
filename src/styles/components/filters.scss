@@ -1,6 +1,11 @@
 @import "../core/variables.scss";
 .form {
-  background-color: $primary-color;
   color: $white;
-  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }

@@ -10,8 +10,8 @@ function CharacterCard(props) {
         alt={props.characterData.name}
         title={props.characterData.name}
       />
-      <h4 className="card__title">Nombre: {props.characterData.name}</h4>
-      <p className="card__text">Especie: {props.characterData.species}</p>
+      <h4 className="card__title">{props.characterData.name}</h4>
+      <p className="card__text">{props.characterData.species}</p>
       <div>
         {isAlive === "Dead" ? (
           <img className="card__calaver" src={skull} alt="Calaver Rick" />
