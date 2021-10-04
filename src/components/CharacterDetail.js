@@ -5,7 +5,7 @@ function CharacterDetail(props) {
   const isAlive = props.character.status;
   return (
     <>
-      <Link>
+      <Link to="/">
         <span className="card__exit">&#10006;</span>
       </Link>
       <img
