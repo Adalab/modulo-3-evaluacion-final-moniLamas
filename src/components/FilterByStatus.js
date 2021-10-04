@@ -5,7 +5,7 @@ function FilterByStatus(props) {
         Estado:
       </label>
       <select
-        className="form__input-text"
+        className="form__input-select"
         name="status"
         id="status"
         value={props.searchStatus}

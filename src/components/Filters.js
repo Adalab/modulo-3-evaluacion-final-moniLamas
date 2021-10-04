@@ -5,6 +5,7 @@ import "../styles/components/filters.scss";
 function Filters(props) {
   return (
     <form className="form" action="">
+      <h2>Buscador de personajes</h2>
       <FilterByName
         searchName={props.searchName}
         handleSearchName={props.handleSearchName}
