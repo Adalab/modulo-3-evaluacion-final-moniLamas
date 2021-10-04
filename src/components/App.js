@@ -49,6 +49,7 @@ function App() {
     .filter(
       (character) => searchStatus === "" || searchStatus === character.status
     );
+
   return (
     <>
       <Header />

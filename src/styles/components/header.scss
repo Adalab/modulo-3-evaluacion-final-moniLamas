@@ -1,6 +1,17 @@
+@import "../core/variables.scss";
+
 .header {
-  padding: 40px 0;
+  background-color: $bg-header;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &__img {
+    width: 200px;
+
+    @media (min-width: 768px) {
+      width: 500px;
+    }
+  }
 }
