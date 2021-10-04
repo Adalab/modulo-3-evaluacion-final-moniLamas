@@ -44,3 +44,16 @@
     width: 30px;
   }
 }
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-main;
+}
+
+.card__exit {
+  font-size: 30px;
+  margin-left: 400px;
+}

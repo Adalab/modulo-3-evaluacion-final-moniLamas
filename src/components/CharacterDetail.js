@@ -4,7 +4,7 @@ import skull from "../images/skull.png";
 function CharacterDetail(props) {
   const isAlive = props.character.status;
   return (
-    <>
+    <article className="card__details">
       <Link to="/">
         <span className="card__exit">&#10006;</span>
       </Link>
@@ -37,7 +37,7 @@ function CharacterDetail(props) {
           ""
         )}
       </div>
-    </>
+    </article>
   );
 }
 
