@@ -1,0 +1,16 @@
+@import "../core/variables.scss";
+.card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-main;
+  color: $white;
+  background-color: $bg-color;
+}
+
+.card__exit {
+  color: $white;
+  font-size: 30px;
+  margin-left: 400px;
+}
