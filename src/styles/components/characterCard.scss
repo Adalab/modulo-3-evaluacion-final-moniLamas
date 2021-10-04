@@ -9,8 +9,12 @@
     font-size: 20px;
   }
   &__img {
-    border-radius: 150px;
-    height: 300px;
+    border: 6px solid $bg-header;
+    border-radius: 100px;
+    height: 200px;
+    :hover {
+      filter: grayscale(80%);
+    }
   }
 
   &__calaver {
