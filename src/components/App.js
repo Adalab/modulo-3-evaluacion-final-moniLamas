@@ -7,6 +7,7 @@ import ls from "../services/ls";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
+import Footer from "./Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -68,9 +69,7 @@ function App() {
         </Route>
       </Switch>
 
-      <footer className="footer">
-        <p className="copy">&copy; Rick and Morty 2021</p>
-      </footer>
+      <Footer />
     </>
   );
 }
