@@ -1,5 +1,4 @@
 import "../styles/App.scss";
-import "../styles/components/header.scss";
 import { useState, useEffect } from "react";
 import { Switch, Route, useRouteMatch } from "react-router";
 import api from "../services/callToApi";
