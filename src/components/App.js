@@ -7,6 +7,7 @@ import ls from "../services/ls";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
+import Header from "./Header";
 import Footer from "./Footer";
 
 function App() {
@@ -40,13 +41,7 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <img
-          className="header__img"
-          src="https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png"
-          alt="Rick and Morty"
-        />
-      </header>
+      <Header />
       <Switch>
         <Route path="/" exact>
           <main className="container">
