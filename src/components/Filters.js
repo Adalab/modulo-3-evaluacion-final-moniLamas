@@ -1,5 +1,6 @@
 import FilterByName from "./FilterByName";
 import FilterByStatus from "./FilterByStatus";
+import "../styles/components/filters.scss";
 
 function Filters(props) {
   return (

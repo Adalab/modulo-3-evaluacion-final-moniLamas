@@ -1,6 +1,21 @@
+@import "../core/variables.scss";
+
 .container {
-  font-family: "Poppins", sans-serif;
-  background-color: aqua;
+  font-family: $font-main;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+}
+
+.cards {
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  max-width: 30px;
 }

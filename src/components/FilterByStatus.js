@@ -1,13 +1,13 @@
 function FilterByStatus(props) {
   return (
     <>
-      <label className="form__label display-block" htmlFor="gender">
+      <label className="form__label" htmlFor="status">
         Estado:
       </label>
       <select
         className="form__input-text"
-        name="gender"
-        id="gender"
+        name="status"
+        id="status"
         value={props.searchStatus}
         onChange={props.handleChangeStatus}
       >
