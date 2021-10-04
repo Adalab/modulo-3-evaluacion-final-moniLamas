@@ -12,10 +12,27 @@
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px 10px;
+    justify-content: stretch;
+    justify-items: center;
+    align-items: end;
+  }
 }
 
 .card {
-  max-width: 30px;
+  &__title {
+    text-decoration: none;
+  }
+  &__img {
+    border-radius: 150px;
+    height: 300px;
+  }
+
+  &__calaver {
+    width: 30px;
+  }
 }
