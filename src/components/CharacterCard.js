@@ -1,4 +1,5 @@
 import skull from "../images/skull.png";
+import "../styles/components/characterCard.scss";
 
 function CharacterCard(props) {
   const isAlive = props.characterData.status;
