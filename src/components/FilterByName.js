@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FilterByName(props) {
   return (
     <>
@@ -13,6 +15,11 @@ function FilterByName(props) {
         value={props.searchName}
         onChange={props.handleSearchName}
       />
+      <Link to="/" exact>
+        <span className="form__reload" onChange="handleReload">
+          &#8635;
+        </span>
+      </Link>
     </>
   );
 }

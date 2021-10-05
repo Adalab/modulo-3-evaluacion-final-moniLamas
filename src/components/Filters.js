@@ -11,9 +11,7 @@ function Filters(props) {
         searchName={props.searchName}
         handleSearchName={props.handleSearchName}
       />
-      <Link to="/" exact>
-        <span className="form__reload">&#8635;</span>
-      </Link>
+
       <FilterByStatus
         searchStatus={props.searchStatus}
         handleChangeStatus={props.handleChangeStatus}
