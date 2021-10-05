@@ -1,16 +1,13 @@
 @import "../core/variables.scss";
 .cards {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 1260px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 50px 10px;
     justify-content: stretch;
     justify-items: center;
-    align-items: end;
+    align-items: flex-start;
   }
 }
