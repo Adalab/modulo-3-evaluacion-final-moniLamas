@@ -8,6 +8,7 @@ import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
 import Header from "./Header";
 import Footer from "./Footer";
+import NotFound from "./NotFoundPage";
 
 function App() {
   const [data, setData] = useState([]);
@@ -73,7 +74,7 @@ function App() {
           </section>
         </Route>
         <Route>
-          <section>Oh! Página equivocada</section>
+          <NotFound />
         </Route>
       </Switch>
 
