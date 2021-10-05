@@ -3,7 +3,8 @@ import skull from "../images/skull.png";
 import "../styles/components/characterDetail.scss";
 
 function CharacterDetail(props) {
-  const isAlive = props.character.status;
+  const status = props.character.status;
+
   return (
     <article className="card__details">
       <Link to="/">
@@ -23,11 +24,9 @@ function CharacterDetail(props) {
       <p className="card__text">
         Aparece en {props.character.episodes} episodios
       </p>
-      <p className="card__text">
-        Está {isAlive === "Alive" ? "Vivo" : "Desconocido"}
-      </p>
+      <p className="card__text">{status}</p>
       <div>
-        {isAlive === "Dead" ? (
+        {status === "Dead" ? (
           <img
             className="card__calaver"
             src={skull}
