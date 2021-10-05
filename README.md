@@ -1,12 +1,15 @@
 # modulo-3-evaluacion-final-moniLamas
+
 ## Desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje. Vamos a usar React para realizarlo.
 
 ### SOBRE EL PROYECTO
-He diseñado y desarrollado __Rick and Morty. Buscador de personajes__
 
-![Rick and Morty](./docs/assets/images/preview.png "Rick and Morty")
+He diseñado y desarrollado **Rick and Morty. Buscador de personajes**
+
+![Rick and Morty](./docs/ "Rick and Morty")
 
 ## Enunciado del ejercicio
+
 <details>
 
 <summary>Requerimientos para ejecutar el ejercicio</summary>
@@ -30,6 +33,7 @@ El listado debe tener los siguientes componentes como mínimo:
 Vamos a implementar una nueva funcionalidad: al hacer clic sobre la tarjeta de un personaje, su información aparecerá a pantalla completa. Para hacer esto usaremos rutas y React Router DOM. En la pantalla de detalle aparecerá además de la foto, nombre y especie, el planeta de origen, el número de episodios en los que aparece y si está vivo o muerto.
 
 #### 5. Detallitos de calidad
+
 - Como nos gusta cuidar la semántica, el campo de texto debe estar recubierto por una etiqueta <form />.
 - Si estando en el campo de filtrado pulsamos intro debéis impedir que el navegador navegue o cambie la ruta sin querer.
 - Si se busca por un texto por ejemplo "XXX" y no hay ningún personaje que coincida con dicho texto se debe mostrar un mensaje del tipo "No hay ningún personaje que coincida con la palabra XXX".
@@ -37,33 +41,38 @@ Vamos a implementar una nueva funcionalidad: al hacer clic sobre la tarjeta de u
 - Al entrar en el detalle de un personaje y a continuación pulsar atrás, el campo de texto debe mostrar el texto que tenía anteriormente.
 
 #### 6. BONUS: Afinar la maquetaciónBONUS: Mejoras visuales
+
 Para terminar, podéis realizar algunas mejoras visuales del ejercicio. Por ejemplo:
 Mostrar la especie y si un personajes está muerto con un icono. Usar algún sistema de grid para pintar el listado de personajes. Que funcione bien el responsive en dispositivos pequeños.
-  
+
 #### 7. BONUS: URL compartible
+
 - Como ejercicio extra os proponemos que la URL del detalle de personaje sea compartible, es decir, que si visitamos esa URL directamente en el navegador se vea el detalle del personaje. Si refescamos el navegador en el detalle de un personaje debe volver a mostrar el detalle del personaje.
 - Y en el caso de que el usuario navegue a una URL inexistente como por ejemplo http://localhost:3000/#/detail/12345 (el id 12345 no existe) debemos mostrar un mensaje del tipo "El personaje que buscas no existe".
-  
+
 #### 8. BONUS: Ordenación
+
 Un extra interesante sería que ordenáseis el listado de personajes alfabéticamente por nombre.
-  
+
 #### 9. BONUS: Más filtros
+
 Un extra interesante sería que añadáis más filtros para filtrar por ejemplo por especie.
 
   </details>
-### Construido con
 
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://gulpjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
+### CONSTUIDO CON
 
-
-
+<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://es.reactjs.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
 
 ## Comenzando
 
 ### Prerrequisitos
 
-Este es un ejemplo de cómo listar las cosas que necesitas para usar el software y cómo instalarlas.
+Instalar en el terminal react
+`npm install -g create-react-app`
+
 ### npm
+
 Instalar npm en su terminal, siguiendo las instrucciones detalladas en la página oficial de [Node](https://nodejs.org/es/download/)
 
 ### Instalación
@@ -76,10 +85,10 @@ Instalar npm en su terminal, siguiendo las instrucciones detalladas en la págin
    ```sh
    npm install
    ```
-3. Ejecutar el comando para visualizar en su navegador 
+3. Ejecutar el comando para visualizar en su navegador
    ```sh
    npm start
-   ```   
+   ```
 
 ## Contribuir
 
@@ -91,14 +100,10 @@ Las contribuciones son lo que hace que la comunidad de código abierto sea un lu
 4. Empuja a la rama (`git push origin feature/AmazingFeature`)
 5. Abrir un Pull Request
 
-
 ## Licencia
 
 Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
 
-
 ## Contacto
 
-Estoy disponible en Twitter - [Moni Lamas](https://twitter.com/MoniMonipeny) 
-
-
+Estoy disponible en Twitter - [Moni Lamas](https://twitter.com/MoniMonipeny)
