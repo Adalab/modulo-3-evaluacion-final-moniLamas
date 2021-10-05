@@ -22,6 +22,7 @@
     height: 30px;
     border: solid 1px $borders;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px $borders, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
 
   &__input-select {
@@ -30,5 +31,6 @@
     color: $primary-color;
     border: solid 1px $borders;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px $borders, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
 }
