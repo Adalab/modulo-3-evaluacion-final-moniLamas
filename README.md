@@ -6,7 +6,17 @@
 
 He diseñado y desarrollado **Rick and Morty. Buscador de personajes**
 
-![Rick and Morty](./docs/ "Rick and Morty")
+#### Página de inicio
+
+![Rick and Morty](./src/images/web1.png "Rick and Morty")
+
+#### Buscador
+
+![Rick and Morty](./src/images/web2.png "Rick and Morty")
+
+#### Detalles del personaje
+
+![Rick and Morty](./src/images/web3png.png "Rick and Morty")
 
 ## Enunciado del ejercicio
 
@@ -79,7 +89,7 @@ Instalar npm en su terminal, siguiendo las instrucciones detalladas en la págin
 
 1. Clona el repo
    ```sh
-   git clone https://github.com/Adalab/modulo-2-evaluacion-final-moniLamas.git
+   git clone https://github.com/Adalab/modulo-3-evaluacion-final-moniLamas.git
    ```
 2. Instalar los paquetes NPM
    ```sh
