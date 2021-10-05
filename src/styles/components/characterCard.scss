@@ -9,9 +9,9 @@
     font-size: 20px;
   }
   &__img {
-    border: 6px solid $bg-header;
-    border-radius: 100px;
-    height: 200px;
+    border: 4px solid $bg-header;
+    border-radius: 70px;
+    height: 140px;
     :hover {
       filter: grayscale(80%);
     }
