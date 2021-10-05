@@ -1,12 +1,13 @@
 @import "../core/variables.scss";
 .form {
-  padding-top: 40px;
+  padding: 40px 0;
   color: $white;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   &__label {
     padding-top: 20px;
   }
@@ -17,18 +18,10 @@
     }
   }
 
-  &__input {
-    width: min-content;
-    height: 30px;
-    border: solid 1px $borders;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px 0px $borders, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  }
-
+  &__input,
   &__input-select {
     width: min-content;
     height: 30px;
-    color: $primary-color;
     border: solid 1px $borders;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 0px $borders, 5px 5px 15px 5px rgba(0, 0, 0, 0);
