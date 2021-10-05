@@ -13,9 +13,15 @@
   }
   @media (min-width: 900px) {
     flex-direction: row;
+    flex-wrap: wrap;
     &__label {
       padding-top: 0px;
     }
+  }
+
+  &__reload {
+    font-size: 30px;
+    color: $white;
   }
 
   &__input,
