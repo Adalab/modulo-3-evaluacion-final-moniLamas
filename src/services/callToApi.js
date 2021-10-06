@@ -10,6 +10,7 @@ function callToApi() {
           species: character.species,
           episodes: character.episode.length,
           homePlanet: character.origin.name,
+          gender: character.gender,
         };
       });
     })

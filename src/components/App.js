@@ -14,6 +14,7 @@ function App() {
   const [data, setData] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchStatus, setSearchStatus] = useState("");
+  const [searchGender, setSearchGender] = useState("");
 
   useEffect(() => {
     if (ls.get("characters", []).length > 0) {
@@ -40,6 +41,10 @@ function App() {
     setSearchStatus(ev.currentTarget.value);
   };
 
+  const handleChangeGender = (ev) => {
+    setSearchGender(ev.currentTarget.value);
+  };
+
   const filteredData = data
 
     .filter((character) =>
@@ -49,6 +54,9 @@ function App() {
     )
     .filter(
       (character) => searchStatus === "" || searchStatus === character.status
+    )
+    .filter(
+      (character) => searchGender === "" || searchGender === character.gender
     );
 
   return (
@@ -62,6 +70,8 @@ function App() {
               handleSearchName={handleSearchName}
               searchStatus={searchStatus}
               handleChangeStatus={handleChangeStatus}
+              searchGender={searchGender}
+              handleChangeGender={handleChangeGender}
             />
             <section className="list">
               <CharacterList data={filteredData} />
