@@ -3,7 +3,11 @@ import skull from "../images/skull.png";
 import "../styles/components/characterDetail.scss";
 
 function CharacterDetail(props) {
-  const status = props.character.status;
+  let status = props.character.status;
+
+  if (status === "Alive") {
+    status = "Vivo";
+  }
 
   return (
     <article className="card__details">
