@@ -7,6 +7,10 @@ function CharacterDetail(props) {
 
   if (status === "Alive") {
     status = "Vivo";
+  } else if (status === "Dead") {
+    status = "Muerto";
+  } else {
+    status = "Paradero desconocido";
   }
 
   return (
