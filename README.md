@@ -5,6 +5,7 @@
 ### SOBRE EL PROYECTO
 
 He diseñado y desarrollado **Rick and Morty. Buscador de personajes**
+He creado un panel para organizar el proceso con GitHub projects, [click para abrir el panel](https://github.com/Adalab/modulo-3-evaluacion-final-moniLamas/projects/1)
 
 #### Página de inicio
 
